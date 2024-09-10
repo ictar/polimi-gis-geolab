@@ -1,0 +1,28 @@
+Season greetings
+<!--Season Greetings-->
+<li data-target="#carousel" data-slide-to="6"  class="active"></li>
+
+index.html
+<!--
+<div id="cf" class="item active">
+</div>
+-->
+
+main.css
+
+/*
+#cf {
+  margin:0 auto;
+  width:auto;
+  height:600px;
+  transition: background-image 1s ease-in-out;
+  background-image:url("../images/carousel/season_greetings_top.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cf:hover {
+  background-image:url("../images/carousel/season_greetings_bottom.jpeg");
+}
+*/

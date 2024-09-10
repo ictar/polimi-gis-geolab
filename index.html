@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GIS-GEOLab Home Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-3.3.4-dist/css/flatly_bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="vendor/jquery-2.1.3.min.js"></script>
+    <script src="vendor/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script>
+      function activeTab(tab) {
+        $(".nav-tabs a[href='#" + tab + "']").tab("show");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-5 col-lg-6 v-center">
+          <h2 onclick="activeTab('tabs-first');" class="content">GIS-GEOLab</h2>
+        </div>
+        <div id="polimi-geolab" class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
+          <a href="http://www.polimi.it/" target="_blank"
+            ><img
+              id="logo-polimi"
+              class="img-responsive"
+              src="images/header/polimi.png"
+          /></a>
+          <a href="http://www.geolab.polimi.it/" target="_blank"
+            ><img
+              id="logo-geolab"
+              class="img-responsive"
+              src="images/header/geolab.png"
+          /></a>
+        </div>
+      </div>
+      <br />
+
+      <!-- TABS -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+          <a href="#tabs-first" role="tab" data-toggle="tab">Home</a>
+        </li>
+        <li><a href="/pages/topics.html">Topics</a></li>
+        <li><a href="/pages/projects.html">Projects</a></li>
+        <li><a href="/pages/applications.html">Applications</a></li>
+        <li><a href="/pages/team.html">Team</a></li>
+        <li><a href="/pages/publications.html">Publications</a></li>
+        <!-- <li><a href="#tabs-seventh" role="tab" data-toggle="tab">Presentations</a></li> -->
+        <!-- <li><a href="#tabs-eighth" role="tab" data-toggle="tab">Posters</a></li> -->
+        <!-- <li><a href="#tabs-ninth" role="tab" data-toggle="tab">Awards</a></li> -->
+        <li><a href="/pages/affiliations.html">Affiliations</a></li>
+        <!-- <li><a href="#tabs-eleventh" role="tab" data-toggle="tab">Events</a></li> -->
+        <li><a href="/pages/software.html">Software</a></li>
+        <li>
+          <a href="/pages/video_presentations.html">Video presentations</a>
+        </li>
+        <li><a href="/pages/news.html">News</a></li>
+      </ul>
+
+      <!-- TAB CONTENT -->
+<!--       <div class="home_image">
+        <img class="home_image" src="images/home/2022_Season_Greetings.png" alt="2022 Season's greetings from PoliMI GIS GEOLab and DICA GG" width="750">
+      </div> -->
+      <div class="tab-content">
+        
+        <div class="active tab-pane fade in" id="tabs-first">
+          <br />
+          <p>
+            Welcome to the Web page showing the collection of research
+            activities and applications developed by the GIS Team, active at the
+            <a href="http://www.geolab.polimi.it/" target="_blank"
+              >GEOlab (Geomatics and Earth Observation laboratory)</a
+            >
+            of
+            <a href="https://www.polimi.it" target="_blank"
+              >Politecnico di Milano</a
+            >.
+          </p>
+          <br />
+          <!-- CAROUSEL -->
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+              <li data-target="#carousel" data-slide-to="4"></li>
+              <li data-target="#carousel" data-slide-to="5"></li>
+              <li data-target="#carousel" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img alt="First slide" src="images/carousel/migrate.png" />
+              </div>
+              <div class="item">
+                <img alt="Second slide" src="images/carousel/newYork.png" />
+              </div>
+              <div class="item">
+                <img alt="Third slide" src="images/carousel/muvias.png" />
+              </div>
+              <div class="item">
+                <img alt="Fourth slide" src="images/carousel/GUF-GHS.png" />
+              </div>
+              <div class="item">
+                <img alt="Fifth slide" src="images/carousel/heatmap.png" />
+              </div>
+              <div class="item">
+                <img
+                  alt="Sixth slide"
+                  src="images/carousel/temperatura_Torino.png"
+                />
+              </div>
+            </div>
+
+            <a
+              class="left carousel-control"
+              href="#carousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="glyphicon glyphicon-chevron-left"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#carousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="glyphicon glyphicon-chevron-right"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- END OF CAROUSEL -->
+
+          <!-- PROJECTS -->
+
+          <!-- ACCORDION -->
+          <!-- <div class="panel-group" id="accordion-projects">
+            <p>The developed applications are the following: </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-projects-one" href="#accordion-projects-one">
+                    MIGRATE - MIGRation pATterns in Europe
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-projects-one" class="panel-collapse collapse">
+                <div class="panel-body">
+                  MIGRATE is a Web Mapping application developed with a gamification approach with the purpose of educating and raising awareness about the phenomenon of migration in Europe. The application is available <a href="http://geomobile.como.polimi.it/migrate" target="_blank">here</a>.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-projects-two" href="#accordion-projects-two">
+                    CityFocus
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-projects-two" class="panel-collapse collapse">
+                <div class="panel-body">
+                  City Focus is a web-based interactive 2D and 3D GIS application to find the best place in a city to live as well as to pass shorter staying. The source code is available <a href="https://github.com/GabrielePrestifilippo/CityFocus" target="_blank">here</a>. The application is available <a href="http://muvias.eoapps.eu/cityfocus/" target="_blank">here</a>.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-projects-three" href="#accordion-projects-three">
+                    Hotspot Analysis QGIS plugin
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-projects-three" class="panel-collapse collapse">
+                <div class="panel-body">
+                  This Python plugin allows to create Hotspot and Clusters maps using LISA (Local Indicators for Spatial Association) statistics in QGIS. The source code is available <a href="https://github.com/danioxoli/HotSpotAnalysis_Plugin" target="_blank">here</a>. The plugin is available <a href="https://plugins.qgis.org/plugins/HotspotAnalysis/" target="_blank">here</a>.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-projects-four" href="#accordion-projects-four">
+                    EU-LULC WebGIS
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-projects-four" class="panel-collapse collapse">
+                <div class="panel-body">
+                  A dynamic tool to visually analyse and compare the land use and land cover datasets available in Europe in a unique online platform. The application is available <a href="http://131.175.143.84/LULC" target="_blank">here</a>.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-projects-five" href="#accordion-projects-five">
+                    HeatmapViz
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-projects-five" class="panel-collapse collapse">
+                <div class="panel-body">
+                  From Twitter & Foursquare Data to heatmap visualization. This app uses the Foursquare and Twitter APIs to show important spots with high density of information in Lombardy Region, Italy. The application is available <a href="http://geomobile.como.polimi.it/heatmap/" target="_blank">here</a>.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-projects-six" href="#accordion-projects-six">
+                    PSAB - Participatory Sensing App Builder
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-projects-six" class="panel-collapse collapse">
+                <div class="panel-body">
+                  PSAB aims to be a platform where users without any advanced technological background can create applications suited to their needs for geospatial data collection.
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- END OF ACCORDION -->
+
+          <!-- <div class="tab-pane fade in" id="tabs-seventh">
+          <h3>2017</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+          <h3>2016</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+          <h3>2015</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+          <h3>2014</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+          <h3>2013</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+        </div> -->
+
+          <!-- <div class="tab-pane fade in" id="tabs-eighth">
+          <h3>2017</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+          <h3>2016</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+          <h3>2015</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+          <h3>2014</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+          <h3>2013</h3>
+          <ul class="dot-list">
+            <li>x</li>
+          </ul>
+        </div> -->
+
+          <!-- <div class="tab-pane fade in" id="tabs-ninth">
+        </div> -->
+
+          <!-- <div class="tab-pane fade in" id="tabs-eleventh">
+          <br>
+          <div class="container-fluid">
+            <div class="row">
+              <div>
+                <p class="para-md-lg"><b>OSM MiniMapathon, Milan (Italy), March 3, 2016</b></p>
+                <p class="p-justify">Organized in collaboration with the <a href="http://hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team (HOT)</a> and the <a href="http://www.missingmaps.org/" target="_blank">Missing Maps</a> project, the event introduced more than 200 10-year old children from local elementary schools to the humanitarian mapping with OpenStreetMap. More information can be found <a href="http://www.geolab.polimi.it/?page_id=2069" target="_blank">here</a>.</p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div>
+                <p class="para-md-lg"><b>FOSS4G Europe 2015, Como (Italy), July 14-17, 2015</b></p>
+                <p class="p-justify">Held at the Como Campus of Politecnico di Milano, the conference was the second edition of the European gathering of users and developers of geospatial open source software. More information can be found <a href="http://europe.foss4g.org/2015" target="_blank">here</a>.</p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div>
+                <p class="para-md-lg"><b>Training School "FOSS4VGI - Using Free and Open Source Software with VGI: integration, analysis and visualisation", Como (Italy), July 15-17, 2015</b></p>
+                <p class="p-justify">Sponsored by <a href="http://www.citizensensor-cost.eu/" target="_blank">COST Action TD1202 “Mapping and the Citizen Sensor”</a>, this Training School was focused on the use of FOSS4G to collect, visualize and manipulate Volunteered Geographic Information (VGI). More information can be found <a href="http://geomobile.como.polimi.it/FOSS4VGI" target="_blank">here</a>.</p>
+              </div>
+            </div>
+          </div> -->
+          <!-- ACCORDION -->
+          <!-- <div class="panel-group" id="accordion-projects">
+            <p>Organized events are the following: </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-events-one" href="#accordion-events-one">
+                    OSM MiniMapathon, Milan (Italy), March 3, 2016
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-events-one" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Organized in collaboration with the <a href="http://hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team (HOT)</a> and the <a href="http://www.missingmaps.org/" target="_blank">Missing Maps</a> project, the event introduced more than 200 10-year old children from local elementary schools to the humanitarian mapping with OpenStreetMap. More information can be found <a href="http://www.geolab.polimi.it/?page_id=2069" target="_blank">here</a>.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-events-two" href="#accordion-events-two">
+                    FOSS4G Europe 2015, Como (Italy), July 14-17, 2015
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-events-two" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Held at the Como Campus of Politecnico di Milano, the conference was the second edition of the European gathering of users and developers of geospatial open source software. More information can be found <a href="http://europe.foss4g.org/2015" target="_blank">here</a>.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-target="#accordion-events-three" href="#accordion-events-three">
+                    Training School "FOSS4VGI - Using Free and Open Source Software with VGI: integration, analysis and visualisation", Como (Italy), July 15-17, 2015
+                  </a>
+                </h4>
+              </div>
+              <div id="accordion-events-three" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Sponsored by <a href="http://www.citizensensor-cost.eu/" target="_blank">COST Action TD1202 “Mapping and the Citizen Sensor”</a>, this Training School was focused on the use of FOSS4G to collect, visualize and manipulate Volunteered Geographic Information (VGI). More information can be found <a href="http://geomobile.como.polimi.it/FOSS4VGI" target="_blank">here</a>.
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- END OF ACCORDION -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <footer class="footer-big footer-medium footer-small">
+      <div class="container">
+        <p class="footer-p">GEOlab of Politecnico di Milano</p>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>

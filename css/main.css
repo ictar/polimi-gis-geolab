@@ -1,0 +1,181 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* margin bottom by footer height */
+  margin-bottom: 60px;
+}
+a.footer-link {
+  color: #ffffff;
+}
+p.footer-p {
+  display: inline;
+}
+.para-md-lg {
+  line-height: 100%;
+  font-size: 120%;
+}
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+ul.dot-list {
+  list-style-type: circle;
+}
+ul li {
+   padding: 3px 0px;
+}
+.v-center {
+  display: table;
+  height: 100px;
+}
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.team-links {
+  line-height: 120%;
+  vertical-align: top;
+}
+.v-center-logo {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+.projects-p {
+  margin: 0px;
+}
+.p-justify {
+  text-align: justify;
+}
+.news-header {
+  line-height: 120%;
+  font-size: 160%;
+  font-weight: 800;
+  color: #18bc9c;
+}
+
+.news-paragraph{
+  font-size: 80;
+  max-width: 700px;
+}
+.img-responsive-profile {
+  width: 150px;
+}
+#logo-polimi {
+  padding-top: 20px;
+  padding-right: 20px;
+  display: inline !important;
+}
+#logo-geolab {
+  display: inline !important;
+}
+#map-selector {
+  height: 250px;
+}
+.home_image{
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+ }
+/* @media screen and (min-width: 992px) {
+  .para-md-lg {
+    line-height: 70%;
+  }
+} */
+@media screen and (max-width: 350px) {
+  .footer-small {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #18bc9c;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width:351px) and (max-width: 600px) {
+  .footer-medium {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #18bc9c;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 601px) {
+  .footer-big {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #18bc9c;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) {
+  #polimi-geolab {
+    text-align: right;
+  }
+}
+
+
+/* Pop-up */
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 60vw;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 130%; /* changed bottom to top */
+  left: 30%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* changed top to bottom */
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent; /* changed border botom color instead of top*/
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
